@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+<script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+
+        var username = document.getElementById('username').value
+        console.log(username)
+
+        var email = document.getElementById('email').value
+        console.log(email)
+
+        if (username == "" || email == "") {
+            alert("data tidak boleh kosong")
+        } else {
+            alert("selamat anda berhasil login")
+        }
+    })
+
+</script>
+
+</html>

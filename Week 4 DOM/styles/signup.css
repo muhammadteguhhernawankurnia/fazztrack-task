@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  width: 50%;
+  height: 112vh;
+  background-image: url("../assets/sign\ up\ assets/robert-bye-95vx5QVl9x4-unsplash 2.png");
+  background-size: cover;
+}
+
+aside {
+  /* background-color: yellowgreen; */
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 1vh;
+  margin-bottom: 3px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  color: #6a4029;
+  font-size: 22px;
+}
+
+aside form {
+  background-color: #ffffff;
+  width: 100%;
+  height: 61vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding: 4vh;
+  margin-bottom: 3px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4f5665;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 7vh;
+  background-color: #ffffff;
+  border: 1px solid #4f5665;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1vh;
+}
+
+.phone-number-input {
+  margin-bottom: 2vh;
+}
+
+button {
+  border: none;
+  width: 100%;
+  height: 7vh;
+  border-radius: 8px;
+  margin-top: 1vh;
+  line-height: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 23px 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 23px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 4px 23px 1px rgba(0, 0, 0, 0.15);
+}
+
+.sign-up-btn {
+  font-weight: 600;
+  font-size: 14px;
+  background-color: rgb(238, 162, 11);
+  color: rgb(92, 47, 22);
+  transition-duration: 0.4s;
+}
+
+.sign-up-btn:hover {
+  background-color: rgb(235, 168, 34);
+  color: rgb(189, 73, 10);
+}
+
+.sign-up-with-google-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  transition-duration: 0.4s;
+}
+
+.sign-up-with-google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition-duration: 0.4s;
+}
+
+.sign-up-with-google-btn:hover {
+  background-color: #ffffff;
+  color: #413d3d;
+}
+
+.question {
+  justify-content: center;
+}
+
+.text-account {
+  position: relative;
+  text-align: center;
+  top: -12px;
+  background: white;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.log-in-btn {
+  font-weight: 600;
+  font-size: 14px;
+  background-color: rgba(106, 64, 41, 1);
+  color: #fff;
+  transition-duration: 0.4s;
+}
+
+.log-in-btn:hover {
+  background-color: rgb(92, 54, 34);
+  color: rgb(201, 192, 192);
+}
+
+footer {
+  /* background-color: #f8f8f8; */
+  width: 100%;
+  height: 27vh;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2vh;
+}
+
+.brand {
+  width: 50%;
+  /* background-color: violet; */
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+
+.brand-logo {
+  height: auto;
+  /* background-color: cornflowerblue; */
+}
+
+.brand-definition {
+  height: auto;
+  /* background-color: antiquewhite; */
+}
+
+.brand-social {
+  height: 3rem;
+  /* background-color: aquamarine; */
+}
+
+.brand-copyright {
+  height: auto;
+  /* background-color: darkgoldenrod; */
+}
+
+.info {
+  display: flex;
+  /* background-color: teal; */
+  width: 50%;
+  height: 15vh;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.info-product {
+  /* background-color: chartreuse; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-product .left-product {
+  /* margin-right: 70px; */
+  width: 50%;
+}
+
+.info-engage {
+  /* background-color: salmon; */
+  /* width: 100%; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-engage .left-engage {
+  /* margin-right: 24px; */
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  section {
+    display: none;
+  }
+  aside {
+    width: 100%;
+    height: 120vh;
+    background-image: url("../assets/sign\ up\ assets/robert-bye-95vx5QVl9x4-unsplash 2.png");
+    background-size: cover;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 0;
+  }
+
+  header {
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    align-items: center;
+    color: black;
+    font-size: 10px;
+  }
+
+  .sign-up {
+    align-items: center;
+    color: #6a4029;
+    font-size: 12px;
+  }
+
+  aside form {
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 5vh;
+    margin-bottom: 0;
+  }
+
+  footer {
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .brand-social {
+    height: 2.5rem;
+  }
+
+  .info {
+    /* display: flex; */
+    width: 100%;
+    height: 15vh;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .info-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  info-product .right-product {
+    text-align-last: start;
+  }
+
+  .info-engage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-engage .left-engage {
+    margin-right: 0px;
+  }
+
+  .info-engage .right-engage {
+    /* margin-right: 0px; */
+    text-align-last: start;
+  }
+}

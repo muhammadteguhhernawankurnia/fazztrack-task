@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xhagumi - Sign Up</title>
+  <link rel="stylesheet" href="./styles/signup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet" />
+  <!-- <script src="/Week 4 DOM/signUp.js"></script> -->
+</head>
+
+<body>
+  <main>
+    <!--left page-->
+    <section></section>
+    <!--right page-->
+    <aside>
+      <header>
+        <div class="logo">
+          <img src="./assets/sign up assets/coffee 1.png" alt="logo" />
+          <h3>Xhagumi Coffee Shop</h3>
+        </div>
+        <div class="sign-up">
+          <h3>Sign Up</h3>
+        </div>
+      </header>
+      <form id="form">
+        <label for="email" class="email">Email Adress :</label>
+        <input type="mail" name="email" id="email" class="password-input" placeholder="Enter your email adress" />
+        <label for="password" class="password">Password :</label>
+        <input type="password" name="password" id="password" class="password-input" placeholder="Enter your password" />
+        <label for="phone-number" class="phone-number">Phone Number :</label>
+        <input type="tel" name="phone-number" id="phone-number" class="phone-number-input"
+          placeholder="Enter your phone number" />
+        <button type="submit" class="sign-up-btn" id="sign-up-btn" onClick="window.location.reload();">Sign Up</button>
+        <button class="sign-up-with-google-btn">
+          <img src="assets/sign up assets/google-logo-png-suite-everything-you-need-know-about-google-newest-0 2.png"
+            alt="google-logo" />
+          Sign Up with Google
+        </button>
+        <div class="question">
+          <hr width="100%" color="#C4C4C4" />
+          <div class="text-account">Already have an account?</div>
+        </div>
+
+        <button class="log-in-btn">Login Here</button>
+
+        <!-- testing output -->
+        <p class="output" id="output"></p>
+        <!-- end testing -->
+      </form>
+      <footer>
+        <div class="brand">
+          <div class="brand-logo">
+            <div class="logo">
+              <img src="./assets/sign up assets/coffee 1.png" alt="logo" />
+              <h3>Xhagumi Coffee Shop</h3>
+            </div>
+            <div class="brand-definition">
+              <p>
+                Coffee Shop is a store that sells some good meals, and
+                especially coffee. We provide high quality beans
+              </p>
+            </div>
+            <div class="brand-social">
+              <img src="./assets/sign up assets/fb.png" alt="fb" />
+              <img src="./assets/sign up assets/twit.png" alt="twitter" />
+              <img src="./assets/sign up assets/ig.png" alt="ig" />
+            </div>
+            <div class="brand-copyright">
+              <p>©2022XhagumiStore</p>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="tittle-product">
+            <h3>Product</h3>
+          </div>
+          <div class="info-product">
+            <div class="left-product">
+              <p>Download</p>
+              <p>Locations</p>
+              <p>Blog</p>
+            </div>
+            <div class="right-product">
+              <p>Pricing</p>
+              <p>Countries</p>
+            </div>
+          </div>
+          <div class="tittle-engage">
+            <h3>Engage</h3>
+          </div>
+          <div class="info-engage">
+            <div class="left-engage">
+              <p>Coffe Shop?</p>
+              <p>FAQ</p>
+              <p>Terms of Service</p>
+            </div>
+            <div class="right-engage">
+              <p>About Us</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </aside>
+  </main>
+
+  <script>
+    let form = document.getElementById('form')
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault()
+
+      let email = document.getElementById('email').value
+      console.log(email)
+      let password = document.getElementById('password').value
+      console.log(password)
+      let phoneNumber = document.getElementById('phone-number').value
+      console.log(phoneNumber)
+
+      if (email == "" || password == "" || phoneNumber == "") {
+        alert("data tidak boleh ada yang kosong")
+      } else {
+        alert("selamat anda berhasil register")
+      }
+    })
+  </script>
+</body>
+
+</html>
