@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shrtcut icon" href="/assets/product customer/coffee.png">
+    <title>Task 3 & 4</title>
+    <link rel="stylesheet" href="./Week 4 DOM/styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Week 4 DOM/styles/product-cust.css">
+    <script type="text/javascript" src="/Week 4 DOM/src/apiHelper.js"></script>
+    <style>
+        .card-menu {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            display: flex;
+            text-align: center;
+            height: 40vh;
+            width: 18%;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
+            margin: 15px 30px 10px 30px;
+        }
+
+        .card-menu img {
+            margin-left: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            ;
+        }
+
+        .card-menu button {
+            background-color: #6a4029;
+            color: white;
+            border-radius: 10px;
+            margin: 20px 20px 20px 20px;
+            height: 5vh;
+            width: 80%;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .row-item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="brand-logo"><img src="./Week 4 DOM/assets/sign up assets/coffee 1.png" alt="logo" /></div>
+            <div class="brand-coffeeshop">
+                <h3>Coffee Shop</h3>
+            </div>
+
+        </div>
+        <nav>
+            <p>Home</p>
+            <p>Product</p>
+            <p>Your Cart</p>
+            <p>History</p>
+        </nav>
+        <div class="helper">
+            <img src="./Week 4 DOM/assets/product details admin/search.png" alt="search">
+            <img src="./Week 4 DOM/assets/product details admin/chat.png" alt="chat">
+            <img src="./Week 4 DOM/assets/product customer/profile header.png" alt="profile-header">
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Promo Today</h2>
+            <p>Coupons will be updated every weeks.</p>
+            <p>Check them out!</p>
+            <div class="first-card">
+                <img src="/Week 4 DOM/assets/product customer/profil 1.png" alt="profile 1">
+                <div class="first-promo-text">
+                    <p><b>HAPPY MOTHER'S DAY!</b></p>
+                    <p>Get one of our favorite menu for free!</p>
+                </div>
+            </div>
+
+            <div class="second-card">
+                <img src="/Week 4 DOM/assets/product customer/profil 2.png" alt="profile 2">
+                <div class="second-promo-text">
+                    <p><b>Get a cup of coffee for free on sunday morning</b></p>
+                    <p>Only at 7 to 9 AM</p>
+                </div>
+            </div>
+
+            <div class="third-card">
+                <img src="/Week 4 DOM/assets/product customer/profil 1.png" alt="profile 1">
+                <div class="third-promo-text">
+                    <p><b>HAPPY MOTHER'S DAY!</b></p>
+                    <p>Get one of our favorite menu for free!</p>
+                </div>
+            </div>
+
+            <div class="fourth-card">
+                <img src="/Week 4 DOM/assets/product customer/profil 4.png" alt="profile 4">
+                <div class="fourth-promo-text">
+                    <p><b>HAPPY HALLOWEEN!</b></p>
+                    <p>Do you like chicken wings? Get 1 free only if you buy pinky promise</p>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-apply-coupon">Apply Coupon</button>
+
+            <div class="terms-and-condition">
+                <h5>Terms and Condition</h5>
+                <p>1. You can only apply 1 coupon per day</p>
+                <p>2. It only for dine in</p>
+                <p>3. Buy 1 get 1 only for new user</p>
+                <p>4. Should make member card to apply coupon</p>
+
+                <div class="edit-promo">
+                    <a href="">
+                        <h5><u>Edit Promo</u></h5>
+                    </a>
+                    <a href="">
+                        <h5><u>Edit New Promo</u></h5>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+        <aside>
+            <nav-product>
+                <a class="nav-link active" aria-current="page" href="#">
+                    <h4><u>Favorite & Promo</u></h4>
+                </a>
+                <a class="nav-link active" aria-current="page" href="#">
+                    <h4>Coffee</h4>
+                </a>
+                <a class="nav-link active" aria-current="page" href="#">
+                    <h4>Non Coffee</h4>
+                </a>
+                <a class="nav-link active" aria-current="page" href="#">
+                    <h4>Foods</h4>
+                </a>
+                <a class="nav-link active" aria-current="page" href="#">
+                    <h4>Add-on</h4>
+                </a>
+            </nav-product>
+            <div class="menu-product">
+
+                <!-- <div class="first-menu">
+                    <div class="photo-product">
+                        <img src="/assets/product customer/veggie tomato mix.jpg" alt="veggie tomato mix">
+                        <h5><b>Veggie Tomato Mix</b></h5>
+                        <h6>IDR 34.000</h6>
+                    </div>
+                </div> -->
+
+                <div id="menu" class="row-item">
+                    loading...
+                </div>
+            </div>
+
+            </div>
+
+            <div class="price-info">
+                <p>*the price has been cutted by discount appears</p>
+            </div>
+
+            <div class="edit-product">
+                <a href="">
+                    <h5><u>Edit Product</u></h5>
+                </a>
+                <a href="">
+                    <h5><u>New Product</u></h5>
+                </a>
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+        <div class="brand">
+            <div class="brand-logo">
+                <div class="logo">
+                    <div>
+                        <img src="/Week 4 DOM/assets/sign up assets/coffee 1.png" alt="logo" />
+                    </div>
+                    <h3>Xhagumi</h3>
+                </div>
+            </div>
+            <div class="brand-definition">
+                <p>
+                    Coffee Shop is a store that sells some good meals, and
+                    especially coffee. We provide high quality beans
+                </p>
+            </div>
+            <div class="brand-social">
+                <img src="/Week 4 DOM/assets/sign up assets/fb.png" alt="fb" />
+                <img src="/Week 4 DOM/assets/sign up assets/twit.png" alt="twitter" />
+                <img src="/Week 4 DOM/assets/sign up assets/ig.png" alt="ig" />
+            </div>
+            <div class="brand-copyright">
+                <p>©2022XhagumiStore</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="tittle-product">
+                <h3>Product</h3>
+                <p>Download</p>
+                <p>Pricing</p>
+                <p>Locations</p>
+                <p>Countries</p>
+                <p>Blog</p>
+            </div>
+            <div class="tittle-engage">
+                <h3>Engage</h3>
+                <p>Coffee Shop?</p>
+                <p>FAQ</p>
+                <p>About Us</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        fetcher('GET', 'menu').then((data) => {
+            document.getElementById('menu').innerHTML = data.map((item) => `
+                <div class='card-menu'>
+                    <img src='${item.product}'>
+                    <b>${item.menu}</b>
+                    <b>IDR ${item.price}</b>
+                    <button onclick='deleteData(${item.id})'>Delete Menu</button>
+                </div>
+                `
+            ).join('')
+        })
+    </script>
+</body>
+
+</html>
