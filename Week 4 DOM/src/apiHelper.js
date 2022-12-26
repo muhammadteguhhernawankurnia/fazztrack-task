@@ -3,7 +3,7 @@ const fetcher = async (method, ep, body = {}) => {
     const result = await getData(ep); //✅
     return result;
   } else if (method == "POST") {
-    postData(ep, body); //✅
+    postData(ep, body);
   } else {
     deleteData(ep); //✅
   }
@@ -45,29 +45,29 @@ const deleteData = (id) => {
 };
 
 //METHOD POST = NAMBAH/NGASIH KE RESOURCE
-const postData = (ep, body) => {
-  let Input = (params) => {
-    return document.getElementById(params);
-  };
-  Input("inputNameRegist").onchange = (text) => {
-    body.name = Input("inputNameRegist").value; //$_POST //$_GET
-    console.log(body);
-  };
-  Input("contentRegist").onchange = (text) => {
-    body.content = Input("contentRegist").value;
-    console.log(body);
-  };
-  fetch(`https://63a3d4209704d18da096c7e0.mockapi.io/xhagumi-food/${ep}`, {
-    method: "POST",
-    body: body,
-  })
-    .then((res) => {
-      if (!res.ok) return Promise.reject(new Error(`HTTP Error ${res.status}`));
+// const postData = (ep, body) => {
+//   let Input = (params) => {
+//     return document.getElementById(params);
+//   };
+//   Input("inputNameRegist").onchange = (text) => {
+//     body.name = Input("inputNameRegist").value; //$_POST //$_GET
+//     console.log(body);
+//   };
+//   Input("contentRegist").onchange = (text) => {
+//     body.content = Input("contentRegist").value;
+//     console.log(body);
+//   };
+//   fetch(`https://63a3d4209704d18da096c7e0.mockapi.io/xhagumi-food/${ep}`, {
+//     method: "POST",
+//     body: body,
+//   })
+//     .then((res) => {
+//       if (!res.ok) return Promise.reject(new Error(`HTTP Error ${res.status}`));
 
-      return res.json();
-    })
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((err) => console.error(err));
-};
+//       return res.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//     })
+//     .catch((err) => console.error(err));
+// };
